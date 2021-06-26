@@ -1,0 +1,2 @@
+python-pptx==0.6.19
+openpyxl==3.0.7

@@ -1,0 +1,267 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+    <head>
+
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Admission Form</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+                    
+          body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; line-height: 30px; text-align: center; }
+
+          a { color: #a365bc; border-bottom: 1px dashed #a365bc; text-decoration: none; transition: all .3s; }
+          a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; }
+
+          h1 { font-size: 26px; font-weight: 300; color: #555; line-height: 46px; font-style: italic; }
+
+          ::-moz-selection { background: #8542a0; color: #fff; text-shadow: none; }
+          ::selection { background: #8542a0; color: #fff; text-shadow: none; }
+
+
+          .form-example { padding: 20px 0; }
+
+          .form-example p.description { margin-bottom: 20px; }
+          .form-example p.copyright { margin-top: 40px; }
+
+          .form-example .form-group { text-align: left; }
+
+          .form-example input[type="text"],
+          .form-example input[type="password"] {
+              background: none; border: 1px solid #ddd; 
+              font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; 
+              box-shadow: none;
+          }
+          .form-example input[type="text"]:focus,
+          .form-example input[type="password"]:focus { outline: 0; background: none; border: 1px solid #a365bc; box-shadow: none; }
+
+          .form-example input[type="text"]::-moz-placeholder,
+          .form-example input[type="password"]::-moz-placeholder { color: #bbb; font-style: italic; }
+
+          .form-example input[type="text"]:-ms-input-placeholder,
+          .form-example input[type="password"]:-ms-input-placeholder { color: #bbb; font-style: italic; }
+
+          .form-example input[type="text"]::-webkit-input-placeholder,
+          .form-example input[type="password"]::-webkit-input-placeholder { color: #bbb; font-style: italic; }
+
+          .form-example button.btn-customized {
+            margin-top: 1rem;
+            padding: .75rem 1.5rem; 
+            background: #a365bc;
+            border: 0; 
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 400; color: #fff; 
+              box-shadow: none;
+          }
+
+          .form-example button.btn-customized:hover, 
+          .form-example button.btn-customized:active, 
+          .form-example button.btn-customized:focus, 
+          .form-example button.btn-customized:active:focus, 
+          .form-example button.btn-customized.active:focus,
+          .form-example button.btn.btn-primary:not(:disabled):not(.disabled):active,
+          .form-example button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+            outline: 0; background: #8542a0; border: 0; color: #fff; box-shadow: none;
+          }
+
+
+        </style>
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body class="h-100">
+    
+    	
+    	<div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-10 col-md-8 col-lg-6">
+					<!-- Form -->
+                	<form class="form-example" action="/upload" method="get">
+                		<h1>ZPHS Nedunoor</h1>
+                		<p class="description">Admission Form (2021 - 2022)</p>
+                		<!-- Input fields -->
+                		<div class="form-group">
+                			<label for="doa">Date of Admission:</label>
+                			<input type="date" class="form-control" id="doa" placeholder="date" name="doa" required>
+                		</div>
+                    <div class="form-group">
+                      <label for="admission_num">Admission Number:</label>
+                      <input type="number" class="form-control" id="admission_num" placeholder="Admission Number ... " name="admission_num" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Full Name:</label>
+                      <input type="text" class="form-control" id="name" placeholder="Full Name ... " name="name" required>
+                    </div>  
+                    <div class="form-group">
+                      <label for="fname">Father Name:</label>
+                      <input type="text" class="form-control" id="fname" placeholder="Father Name ... " name="fname" required>
+                    </div>  
+                    <div class="form-group">
+                      <label for="mname">Mother Name:</label>
+                      <input type="text" class="form-control" id="mname" placeholder="Mother Name ... " name="mname" required>
+                    </div>  
+                    <div class="form-group">
+                      <label for="ad_num">Aadhaar Number:</label>
+                      <input type="number" min="99999999999" max="999999999999" class="form-control" id="ad_num" placeholder="Aadhaar Number" name="ad_num" required>
+                    </div>  
+                    <div class="form-group">
+                      <label for="dob">Date of Birth:</label>
+                      <input type="date" class="form-control" id="dob" placeholder="Date of Birth ... " name="dob" required>
+                    </div>  
+                    <div class="form-group">
+                      <label for="gen">Gender:</label>
+                      <select id="gen" name="gen" class="form-control" required>
+                        <option value="" selected>Choose option ...</option>
+                        <option value="Boy">Boy</option>
+                        <option value="Girl">Girl</option>
+                      </select>
+                    </div>  
+                    <div class="form-group">
+                      <label for="caste">Caste* & Sub Caste:</label>
+                      <input type="text" class="form-control" id="caste" placeholder="Caste* & Sub Caste ... " name="caste" required>
+                    </div> 
+                    <div class="form-group">
+                      <label for="m_tongue">Mother Tongue:</label>
+                      <input type="text" class="form-control" id="m_tongue" placeholder="Mother Tongue ... " name="m_tongue" required>
+                    </div> 
+                    <div class="form-group">
+                      <label for="rel">Religion:</label>
+                      <input type="text" class="form-control" id="rel" placeholder="Religion ... " name="rel" required>
+                    </div> 
+                    <div class="form-group">
+                      <label for="p_l_stat">Parent Literacy Status:</label>
+                      <select id="p_l_stat" name="p_l_stat" class="form-control" required>
+                        <option value="" selected>Choose option ...</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    </div>  
+                    <div class="form-group">
+                      <label for="voc">VOCATION:</label>
+                      <input type="text" class="form-control" id="voc" placeholder="VOCATION ... " name="voc" required>
+                    </div> 
+                    <div class="form-group">
+                      <label for="l_y_a_exam">Last Year Final Examination Appeared:</label>
+                      <select id="l_y_a_exam" name="l_y_a_exam" class="form-control" required>
+                        <option value="" selected>Choose option ...</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    </div>  
+                    <div class="form-group">
+                      <label for="p_mark_1">Personal Identification Marks-I:</label>
+                      <input type="text" class="form-control" id="p_mark_1" placeholder="Personal Identification Marks-I ... " name="p_mark_1">
+                    </div> 
+                    <div class="form-group">
+                      <label for="p_mark_2">Personal Identification Marks-II:</label>
+                      <input type="text" class="form-control" id="p_mark_2" placeholder="Personal Identification Marks-II ... " name="p_mark_2">
+                    </div> 
+                    <div class="form-group">
+                      <label for="no_d_attend">No. of days child attended school :</label>
+                      <input type="number" class="form-control" id="no_d_attend" placeholder="No. of days child attended school ... " name="no_d_attend">
+                    </div>
+                    <div class="form-group">
+                      <label for="c_class">Present, Studying in Class :</label>
+                      <input type="number" max="10" min="1" class="form-control" id="c_class" placeholder="Present, Studying in Class ... " name="c_class" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="p_class">Class studied in previous year :</label>
+                      <input type="number" max="10" min="1" class="form-control" id="p_class" placeholder="Class studied in previous year ... " name="p_class" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="a_class">Class in which admitted :</label>
+                      <input type="number" max="10" min="1" class="form-control" id="a_class" placeholder="Class in which admitted ... " name="a_class" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="med">Medium :</label>
+                      <select id="med" name="med" class="form-control" required>
+                        <option value="" selected>Choose option ...</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="English">English</option>
+                      </select>
+                    </div> 
+                    <div class="form-group">
+                      <label for="f_lang">First Language :</label>
+                      <select id="f_lang" name="f_lang" class="form-control" required>
+                        <option value="" selected>Choose option ...</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Hindi">Hindi</option>
+                      </select>
+                    </div> 
+                    <div class="form-group">
+                      <label for="s_lang">Second Language :</label>
+                      <select id="s_lang" name="s_lang" class="form-control" required>
+                        <option value="" selected>Choose option ...</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Hindi">Hindi</option>
+                      </select>
+                    </div> 
+                    <div class="form-group">
+                      <label for="r_s_number">TC / Record Sheet Number :</label>
+                      <input type="number" max="9999" min="999" class="form-control" id="r_s_number" placeholder="TC / Record Sheet Number ... " name="r_s_number" >
+                    </div>
+                    <div class="form-group">
+                      <label for="r_s_date">TC / Record Sheet Issued Date :</label>
+                      <input type="date" class="form-control" id="r_s_date" placeholder="TC / Record Sheet Issued Date ... " name="r_s_date">
+                    </div>
+                    <div class="form-group">
+                      <label for="dist">Name of the Permanent District :</label>
+                      <input type="text" class="form-control" id="dist" placeholder="Name of the Permanent District ... " name="dist" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="mdl">Name of the Permanent Mandal :</label>
+                      <input type="text" class="form-control" id="mdl" placeholder="Name of the Permanent Mandal ... " name="mdl" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="mplity">GP/Municipality/ Revenue :</label>
+                      <input type="text" class="form-control" id="mplity" placeholder="GP/Municipality/ Revenue ... " name="mplity" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="mobile">Mobile Number :</label>
+                      <input type="number" max="9999999999" min="999999999" class="form-control" id="mobile" placeholder="Mobile Number ... " name="mobile">
+                    </div>
+                    <div class="form-group">
+                      <label for="acc_num">Account Number :</label>
+                      <input type="number" class="form-control" id="acc_num" placeholder="Account Number ... " name="acc_num">
+                    </div>
+                    <div class="form-group">
+                      <label for="bank_n">Bank Name :</label>
+                      <input type="text" class="form-control" id="bank_n" placeholder="Bank Name ... " name="bank_n">
+                    </div>
+                    <div class="form-group">
+                      <label for="branch_n">Branch Name :</label>
+                      <input type="text" class="form-control" id="branch_n" placeholder="Branch Name ... " name="branch_n">
+                    </div>
+                    <div class="form-group">
+                      <label for="ifsc">IFSC Code :</label>
+                      <input type="text" class="form-control" id="ifsc" placeholder="IFSC Code ... " name="ifsc">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-customized">Submit</button>
+                		<!-- End input fields -->
+                		
+                	</form>
+					<!-- Form end -->
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
